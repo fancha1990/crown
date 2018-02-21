@@ -22,7 +22,7 @@
 	<header class="header">
 		
 		<div class="logo">
-			<a href="#"><img src="img/logo.png" alt=""></a>
+                    <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>img/logo.png" alt=""></a>
 		</div>
 
 		<ul class="main-menu">
