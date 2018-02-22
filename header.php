@@ -4,15 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=<?php echo bloginfo('charset');?>" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title><?php wp_get_document_title(); ?></title>
+	<title><?php echo wp_get_document_title(); ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>" /><!--css/style.css-->		
+        <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_url');?>" /><!--css/style.css-->		
 	<?php wp_head(); ?>		
 </head>
 <body>
@@ -22,7 +22,7 @@
 	<header class="header">
 		
 		<div class="logo">
-                    <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>img/logo.png" alt=""></a>
+                    <a href="<?php echo home_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
 		</div>
 
 		<ul class="main-menu">
@@ -201,7 +201,7 @@
 						<ul class="cart-list">
 							<li class="cart-list__item">
 								<div class="cart-list__img">
-									<a href="#"><img src="img/cart-list-img.png" alt=""></a>
+									<a href="#"><img src="<?php echo bloginfo('template_url'); ?>/img/cart-list-img.png" alt=""></a>
 								</div>
 								<div class="cart-list__info">
 									<h6 class="product__title"><a href="#">New Balance Men's Street Backpack</a></h6>
@@ -222,7 +222,7 @@
 							</li>
 							<li class="cart-list__item">
 								<div class="cart-list__img">
-									<a href="#"><img src="img/cart-list-img1.png" alt=""></a>
+									<a href="#"><img src="<?php echo bloginfo('template_url'); ?>/img/cart-list-img1.png" alt=""></a>
 								</div>
 								<div class="cart-list__info">
 									<h6 class="product__title"><a href="#">Lyle & Scott Men's Short Sleeve Camo Pocket</a></h6>
@@ -243,7 +243,7 @@
 							</li>
 							<li class="cart-list__item">
 								<div class="cart-list__img">
-									<a href="#"><img src="img/cart-list-img2.png" alt=""></a>
+									<a href="#"><img src="<?php echo bloginfo('template_url'); ?>/img/cart-list-img2.png" alt=""></a>
 								</div>
 								<div class="cart-list__info">
 									<h6 class="product__title"><a href="#">Lyle & Scott Men's Short Sleeve Camo Pocket</a></h6>

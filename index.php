@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 	<main class="main">
-		<section class="header-inner" style="background-image: url('img/header-inner.png');">
+		<section class="header-inner" style="background-image: url('<?php echo bloginfo('template_url'); ?>/img/header-inner.png');">
 			
 			<ul class="bread-crambs">
 				<li class="bread-crambs__item">
@@ -193,10 +193,10 @@
 	
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/jquery.formstyler.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/jquery.formstyler.min.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/custom.js"></script>
 
 </body>
 </html>
