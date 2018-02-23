@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.css">
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_url');?>" /><!--css/style.css-->		
+        <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url'); ?>/css/style.css" /><!--css/style.css-->		
 	<?php wp_head(); ?>		
 </head>
 <body>
