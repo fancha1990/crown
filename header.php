@@ -14,13 +14,14 @@
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url'); ?>/css/style.css" /><!--css/style.css-->		
 	<?php wp_head(); ?>		
+        
+        <link href="<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
 </head>
 <body>
 		
 <div class="main-wrapper">
 
 	<header class="header">
-		
 		<div class="logo">
                     <a href="<?php echo home_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
 		</div>

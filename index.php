@@ -187,9 +187,7 @@
 		</div>
 	</main>		
 	
-	<footer>
-		
-	</footer>
+<?php get_footer();?>
 	
 </div>
 
