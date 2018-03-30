@@ -12,19 +12,46 @@
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.css">
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url'); ?>/css/style.css" /><!--css/style.css-->		
-	<?php wp_head(); ?>		
-        
+        <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url'); ?>/css/style.css" /><!--css/style.css-->
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
+        
+	<?php wp_head(); ?>		
+        <link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo bloginfo('template_url'); ?>/img/1534llo.ico">
+        <script src="<?php echo bloginfo('template_url'); ?>/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="<?php echo bloginfo('template_url');?>/js/preloader.js" type="text/javascript"></script>
 </head>
 <body>
-		
-<div class="main-wrapper">
+    
+    <!--preloader-->
+    <div class="preloader"></div>
+    <!--preloader_end-->
+<div class="main-wrapper container-fluid">
 
-	<header class="header">
+	<header class="header row">
 		<div class="logo">
-                    <a href="<?php echo home_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
+                    <a href="<?php echo home_url(); ?>"><h1 id="log_art">crown</h1></a>
 		</div>
+            
+                <?php
+                wp_nav_menu( array(
+                                'theme_location'  => 'main-menu',
+                                'menu'            => '',
+                                'container'       => 'ul',
+                                'container_class' => '',
+                                'container_id'    => '',
+                                'menu_class'      => '', //main-menu
+                                'menu_id'         => '',
+                                'echo'            => true,
+                                'fallback_cb'     => 'wp_page_menu',
+                                'before'          => '',
+                                'after'           => '',
+                                'link_before'     => '',
+                                'link_after'      => '',
+                                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                'depth'           => 0,
+                                'walker'          => '',
+                        ) );
+                ?>
 
 		<ul class="main-menu">
 			<li class="main-menu__item dropdown">

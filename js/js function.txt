@@ -1,0 +1,18 @@
+В javascript не существует тегов и атребутов
+существуют:
+ *переменные;
+ *функции;
+ *команды;
+ *условия;
+подключение
+head>><script src=""></script><<head
+body..>><script language="javascript" type="text/javascript">
+aler('любая информация');
+var переменная;
+console.log
+булевые переменные
+переменные могут быть
+number 
+strings-"name,hello world"
+boolenas-true/false(1/0);
+objects

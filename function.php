@@ -51,4 +51,34 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+/*меню*/
+/*
+add_action( 'after_setup_theme', 'theme_register_nav_menu' );
+function theme_register_nav_menu() {
+	register_nav_menu( 'primary', 'Primary Menu' );
+}
+*/
+/*(попытка) изменение классов <li> и <а> в меню*/
+function wpdocs_add_menu_parent_class( $items ) {
+    $parents = array();
+ 
+    // Collect menu items with parents.
+    foreach ( $items as $item ) {
+        if ( $item->menu_item_parent && $item->menu_item_parent > 0 ) {
+            $parents[] = $item->menu_item_parent;
+        }
+    }
+ 
+    // Add class.
+    foreach ( $items as $item ) {
+        if ( in_array( $item->ID, $parents ) ) {
+            $item->classes[] = 'menu-parent-item';
+        }
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_objects', 'wpdocs_add_menu_parent_class' );
+
+
+
 ?>

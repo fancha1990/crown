@@ -38,3 +38,12 @@
  </ul>
 
 </footer>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/jquery.formstyler.min.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/custom.js"></script>
